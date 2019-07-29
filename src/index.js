@@ -1,7 +1,6 @@
 import React from 'react';
-import { forEach, isEqual,isEmpty,findIndex,hasIn }  from 'lodash';
+import { forEach, isEqual }  from 'lodash';
 import PropTypes from 'prop-types';
-import { format } from 'util';
 
 let formElements = {};
 
@@ -134,11 +133,10 @@ export default class Validator extends React.Component{
     }
     ip(rule, value){
         if(rule === true){
-            return require('net').isIP(value)
+            return !/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(value)
         }
         return false
     }
-
     equalTo( rule, value ){
     
         if(rule === value){
@@ -147,11 +145,12 @@ export default class Validator extends React.Component{
         return true;
     }
     
-    
     render(){
         let { error } = this.state;
-        return( 
-            <span className="error" style={{color:'red',fontSize:`12'px'`}}>{error}</span>
+        return (
+            <span className="error" style={{color:'red',fontSize:`12'px'`}}>
+                {error}
+            </span>
         );
     }
 
