@@ -141,6 +141,12 @@ Note:: key of ```validationRules``` object and ```validationMessages``` must be 
 
 **color** :- color:boolean ```color:true```
 
+**ip** :- ip:boolean ```ip:true```
+
+**phone** :- phone:boolean ```phone:true```
+
+Note:- valid formats **(dd) ddd-dddd** and **ddd ddd ddd**
+
 **equalTo** :- equalTo:refererValue ```equalTo:password```
 
 Note:- in equalTo password is a value to which this rule is validates
