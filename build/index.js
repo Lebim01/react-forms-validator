@@ -235,6 +235,24 @@ function (_React$Component) {
       return false;
     }
   }, {
+    key: "minRangeNumber",
+    value: function minRangeNumber(rule, value) {
+      if (parseFloat(rule)) {
+        return parseFloat(value) < rule;
+      }
+
+      return false;
+    }
+  }, {
+    key: "maxRangeNumber",
+    value: function maxRangeNumber(rule, value) {
+      if (parseFloat(rule)) {
+        return parseFloat(value) > rule;
+      }
+
+      return false;
+    }
+  }, {
     key: "equalTo",
     value: function equalTo(rule, value) {
       if (rule === value) {
