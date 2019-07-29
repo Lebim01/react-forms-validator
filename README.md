@@ -145,7 +145,7 @@ Note:: key of ```validationRules``` object and ```validationMessages``` must be 
 
 **phone** :- phone:boolean ```phone:true```
 
-Note:- valid formats **(dd) ddd-dddd** and **ddd ddd ddd**
+Note:- valid formats ```(dd) ddd-dddd``` and ```ddd ddd ddd```
 
 **equalTo** :- equalTo:refererValue ```equalTo:password```
 
