@@ -147,6 +147,19 @@ export default class Validator extends React.Component{
         }
         return false
     }
+    minRangeNumber(rule, value){
+        if (parseFloat(rule)){
+            return parseFloat(value) < rule;
+        }
+        return false;
+    }
+    maxRangeNumber(rule, value){
+        if (parseFloat(rule)){
+            return parseFloat(value) > rule;
+        }
+        return false;
+    }
+
     equalTo( rule, value ){
     
         if(rule === value){
