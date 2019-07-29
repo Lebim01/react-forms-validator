@@ -132,6 +132,12 @@ export default class Validator extends React.Component{
         }
         return false;
     }
+    ip(rule, value){
+        if(rule === true){
+            return require('net').isIP(value)
+        }
+        return false
+    }
 
     equalTo( rule, value ){
     
