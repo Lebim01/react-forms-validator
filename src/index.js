@@ -137,6 +137,16 @@ export default class Validator extends React.Component{
         }
         return false
     }
+    phone(rule, value){
+        if(rule === true){
+            // (dd) ddd-dddd
+            const format1 = /(\(\d\d\)+\s+\d\d\d+\s\-+\s+\d\d\d\d)/
+            // ddd ddd ddd
+            const format2 = /(\d\d\d+\s+\d\d\d+\s\-+\s+\d\d\d)/
+            return !(format1.test(value) || format2.test(value))
+        }
+        return false
+    }
     equalTo( rule, value ){
     
         if(rule === value){
