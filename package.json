@@ -1,0 +1,97 @@
+{
+  "_from": "react-forms-validator",
+  "_id": "react-forms-validator@1.0.8",
+  "_inBundle": false,
+  "_integrity": "sha1-P4+sqk+1KPSpsK0kjOmWLFdQ3Iw=",
+  "_location": "/react-forms-validator",
+  "_phantomChildren": {
+    "center-align": "0.1.3",
+    "co": "4.6.0",
+    "create-react-class": "15.6.3",
+    "decamelize": "1.2.0",
+    "emojis-list": "2.1.0",
+    "fbjs": "0.8.17",
+    "get-caller-file": "1.0.3",
+    "graceful-fs": "4.1.15",
+    "interpret": "1.2.0",
+    "json-loader": "0.5.7",
+    "json-stable-stringify": "1.0.1",
+    "loader-runner": "2.4.0",
+    "loose-envify": "1.4.0",
+    "memory-fs": "0.4.1",
+    "mkdirp": "0.5.1",
+    "node-libs-browser": "2.2.0",
+    "object-assign": "4.1.1",
+    "os-locale": "1.4.0",
+    "prop-types": "15.7.2",
+    "read-pkg-up": "1.0.1",
+    "require-directory": "2.1.1",
+    "require-main-filename": "1.0.1",
+    "right-align": "0.1.3",
+    "set-blocking": "2.0.0",
+    "string-width": "1.0.2",
+    "strip-ansi": "3.0.1",
+    "uglify-to-browserify": "1.0.2",
+    "watchpack": "1.6.0",
+    "webpack-sources": "1.3.0",
+    "which-module": "1.0.0",
+    "window-size": "0.1.0",
+    "wrap-ansi": "2.1.0",
+    "y18n": "3.2.1"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-forms-validator",
+    "name": "react-forms-validator",
+    "escapedName": "react-forms-validator",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-forms-validator/-/react-forms-validator-1.0.8.tgz",
+  "_shasum": "3f8facaa4fb528f4a9b0ad248ce9962c5750dc8c",
+  "_spec": "react-forms-validator",
+  "_where": "D:\\Documentos\\reactjs\\vivaldi-frontend",
+  "bugs": {
+    "url": "https://github.com/naiduprakash/prakash-react-form-validator/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "react": "^15.5.4",
+    "webpack": "^2.6.1"
+  },
+  "deprecated": false,
+  "description": "fluent validation for react",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "path": "^0.12.7"
+  },
+  "homepage": "https://github.com/naiduprakash/prakash-react-form-validator#readme",
+  "main": "build/index.js",
+  "name": "react-forms-validator",
+  "peerDependencies": {
+    "react": "^15.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/naiduprakash/prakash-react-form-validator.git"
+  },
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.8"
+}
