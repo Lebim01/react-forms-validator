@@ -1,8 +1,8 @@
 {
-  "_from": "react-forms-validator",
+  "_from": "git+https://github.com/Lebim01/react-forms-validator.git",
   "_id": "react-forms-validator@1.0.8",
   "_inBundle": false,
-  "_integrity": "sha1-P4+sqk+1KPSpsK0kjOmWLFdQ3Iw=",
+  "_integrity": "",
   "_location": "/react-forms-validator",
   "_phantomChildren": {
     "center-align": "0.1.3",
@@ -40,46 +40,49 @@
     "y18n": "3.2.1"
   },
   "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "react-forms-validator",
+    "type": "git",
+    "raw": "react-forms-validator@git+https://github.com/Lebim01/react-forms-validator.git",
     "name": "react-forms-validator",
     "escapedName": "react-forms-validator",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
+    "rawSpec": "git+https://github.com/Lebim01/react-forms-validator.git",
+    "saveSpec": "git+https://github.com/Lebim01/react-forms-validator.git",
+    "fetchSpec": "https://github.com/Lebim01/react-forms-validator.git",
+    "gitCommittish": null
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-forms-validator/-/react-forms-validator-1.0.8.tgz",
+  "_resolved": "git+https://github.com/Lebim01/react-forms-validator.git#2ec025147f76cb842e4667175cc7a10ac2ca55e0",
   "_shasum": "3f8facaa4fb528f4a9b0ad248ce9962c5750dc8c",
-  "_spec": "react-forms-validator",
+  "_spec": "react-forms-validator@git+https://github.com/Lebim01/react-forms-validator.git",
   "_where": "D:\\Documentos\\reactjs\\vivaldi-frontend",
   "bugs": {
     "url": "https://github.com/naiduprakash/prakash-react-form-validator/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "lodash": "^4.17.4",
+    "moment": "^2.24.0",
+    "net": "^1.0.2",
     "prop-types": "^15.6.0",
-    "react": "^15.5.4",
-    "webpack": "^2.6.1"
+    "react": "^15.6.2",
+    "webpack": "3.8.1"
   },
   "deprecated": false,
   "description": "fluent validation for react",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
+    "babel-loader": "^7.1.5",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.5.1",
     "path": "^0.12.7"
   },
   "homepage": "https://github.com/naiduprakash/prakash-react-form-validator#readme",
-  "main": "src/index.js",
+  "main": "build/index.js",
   "name": "react-forms-validator",
   "peerDependencies": {
     "react": "^15.5.4"
