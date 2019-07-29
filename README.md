@@ -147,6 +147,14 @@ Note:: key of ```validationRules``` object and ```validationMessages``` must be 
 
 Note:- valid formats ```(dd) ddd-dddd``` and ```ddd ddd ddd```
 
+**minRangeNumber** :- minRangeNumber:number ```minRangeNumber:1```
+
+**maxRangeNumber** :- maxRangeNumber:number ```maxRangeNumber:1000```
+
+**minRangeDate** :- minRangeDate:date ```minRangeDate:2019-01-01```
+
+**maxRangeDate** :- maxRangeDate:date ```maxRangeDate:2019-12-31```
+
 **equalTo** :- equalTo:refererValue ```equalTo:password```
 
 Note:- in equalTo password is a value to which this rule is validates
