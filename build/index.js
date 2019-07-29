@@ -222,6 +222,19 @@ function (_React$Component) {
       return false;
     }
   }, {
+    key: "phone",
+    value: function phone(rule, value) {
+      if (rule === true) {
+        // (dd) ddd-dddd
+        var format1 = /(\(\d\d\)+\s+\d\d\d+\s\-+\s+\d\d\d\d)/; // ddd ddd ddd
+
+        var format2 = /(\d\d\d+\s+\d\d\d+\s\-+\s+\d\d\d)/;
+        return !(format1.test(value) || format2.test(value));
+      }
+
+      return false;
+    }
+  }, {
     key: "equalTo",
     value: function equalTo(rule, value) {
       if (rule === value) {
