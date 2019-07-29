@@ -1,6 +1,7 @@
 import React from 'react';
 import { forEach, isEqual }  from 'lodash';
 import PropTypes from 'prop-types';
+import moment from 'momnet'
 
 let formElements = {};
 
@@ -156,6 +157,22 @@ export default class Validator extends React.Component{
     maxRangeNumber(rule, value){
         if (parseFloat(rule)){
             return parseFloat(value) > rule;
+        }
+        return false;
+    }
+    minRangeDate(rule, value){
+        let _rule = moment(rule)
+        let _value = moment(value)
+        if (_rule.isValid() && _value.isValid()){
+            return _value.isBefore(_rule)
+        }
+        return false;
+    }
+    maxRangeDate(rule, value){
+        let _rule = moment(rule)
+        let _value = moment(value)
+        if (_rule.isValid() && _value.isValid()){
+            return _value.isAfter(_rule)
         }
         return false;
     }
