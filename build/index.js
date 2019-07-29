@@ -11,6 +11,8 @@ var _lodash = require("lodash");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
+var _momnet = _interopRequireDefault(require("momnet"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _instanceof(left, right) { if (right != null && typeof Symbol !== "undefined" && right[Symbol.hasInstance]) { return !!right[Symbol.hasInstance](left); } else { return left instanceof right; } }
@@ -248,6 +250,32 @@ function (_React$Component) {
     value: function maxRangeNumber(rule, value) {
       if (parseFloat(rule)) {
         return parseFloat(value) > rule;
+      }
+
+      return false;
+    }
+  }, {
+    key: "minRangeDate",
+    value: function minRangeDate(rule, value) {
+      var _rule = (0, _momnet.default)(rule);
+
+      var _value = (0, _momnet.default)(value);
+
+      if (_rule.isValid() && _value.isValid()) {
+        return _value.isBefore(_rule);
+      }
+
+      return false;
+    }
+  }, {
+    key: "maxRangeDate",
+    value: function maxRangeDate(rule, value) {
+      var _rule = (0, _momnet.default)(rule);
+
+      var _value = (0, _momnet.default)(value);
+
+      if (_rule.isValid() && _value.isValid()) {
+        return _value.isAfter(_rule);
       }
 
       return false;
