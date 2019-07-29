@@ -228,7 +228,7 @@ function (_React$Component) {
         // (dd) ddd-dddd
         var format1 = /(\(\d\d\)+\s+\d\d\d+\s\-+\s+\d\d\d\d)/; // ddd ddd ddd
 
-        var format2 = /(\d\d\d+\s+\d\d\d+\s\-+\s+\d\d\d)/;
+        var format2 = /(\d\d\d+\s+\d\d\d+\s+\d\d\d)/;
         return !(format1.test(value) || format2.test(value));
       }
 
