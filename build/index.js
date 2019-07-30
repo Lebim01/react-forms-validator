@@ -146,7 +146,7 @@ function (_React$Component) {
     key: "required",
     value: function required(rule, value) {
       if (rule === true) {
-        return value.toString().trim().length === 0;
+        return value && value.toString().trim().length === 0 ? value.toString().trim().length === 0 : false;
       }
 
       return false;
