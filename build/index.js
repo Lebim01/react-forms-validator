@@ -11,7 +11,7 @@ var _lodash = require("lodash");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _momnet = _interopRequireDefault(require("momnet"));
+var _moment = _interopRequireDefault(require("moment"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -257,9 +257,9 @@ function (_React$Component) {
   }, {
     key: "minRangeDate",
     value: function minRangeDate(rule, value) {
-      var _rule = (0, _momnet.default)(rule);
+      var _rule = (0, _moment.default)(rule);
 
-      var _value = (0, _momnet.default)(value);
+      var _value = (0, _moment.default)(value);
 
       if (_rule.isValid() && _value.isValid()) {
         return _value.isBefore(_rule);
@@ -270,9 +270,9 @@ function (_React$Component) {
   }, {
     key: "maxRangeDate",
     value: function maxRangeDate(rule, value) {
-      var _rule = (0, _momnet.default)(rule);
+      var _rule = (0, _moment.default)(rule);
 
-      var _value = (0, _momnet.default)(value);
+      var _value = (0, _moment.default)(value);
 
       if (_rule.isValid() && _value.isValid()) {
         return _value.isAfter(_rule);
