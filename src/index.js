@@ -85,7 +85,7 @@ export default class Validator extends React.Component{
     }
     required( rule, value ){
         if (rule === true){
-            return value && value.toString().trim().length === 0 ? value.toString().trim().length === 0 : false;
+            return value ? value.toString().trim().length === 0 : true;
         }
         return false
     }
