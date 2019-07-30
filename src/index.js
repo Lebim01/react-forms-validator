@@ -1,7 +1,7 @@
 import React from 'react';
 import { forEach, isEqual }  from 'lodash';
 import PropTypes from 'prop-types';
-import moment from 'momnet'
+import moment from 'moment'
 
 let formElements = {};
 
